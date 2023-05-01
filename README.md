@@ -1,2 +1,5 @@
-# Algoritmos UTFPR
- Algoritmos criados durante o curso da UTFPR
+# Algoritmos | UTFPR
+Algoritmos criados em C durante o curso de **Fundamentos de programação** realizado no primeiro semestre de Análise e Desenvolvimento de Sistemas na **UTFPR**.
+
+![Logo UTFPR](https://i0.wp.com/www.pebsp.com/wp-content/uploads/2019/01/logo_utfpr_Easy-Resize.com_.jpg?fit=1280%2C1280&ssl=1 "UTFPR-CP")
+
