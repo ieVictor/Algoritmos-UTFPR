@@ -40,8 +40,13 @@ public class Bakers
     return bakerSalary[id - 1];
   }
 
+  public int[] getBakersIds()
+  {
+    return bakerId;
+  }
+
   // List all ---------------------------------------------
-  public void listBakers()
+  public void listBakers(Product product)
   {
     if(bakerCounter == 0)
     {
@@ -53,6 +58,19 @@ public class Bakers
       System.out.println("\nID: " + (i + 1));
       System.out.println("Baker name: " + bakerName[i]);
       System.out.println("Baker salary: " + bakerSalary[i]);
+      salaryInfo(product, i);
+    }
+  }
+
+  private void salaryInfo(Product products, int id)
+  {
+    for(int i = 0; i < products.productCounter; i++)
+    {
+      //if(products.getProductBakerId(i) == id)
+      //{
+        bakerSalary[id] += (products.getProductPrice(i) * 0.05) * (double)products.getProductAmount(i); 
+        System.out.println("Salary with products maked: " + bakerSalary[id]);
+      //}
     }
   }
 }

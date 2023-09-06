@@ -5,6 +5,7 @@ public class Controller
   Bakers bakers = new Bakers();
   Menu menu = new Menu();
   int userSelection = 0;
+  Product products = new Product(bakers);
 
   public void selectionProcess(int selection)
   {
@@ -34,7 +35,7 @@ public class Controller
           System.out.println("\nSelection not found!");
           break;
       }
-    }while(selection != 0 || userSelection != 0);
+    }while(selection != 0 && userSelection != 0);
   }
 
   public void customerProcess(int selection)
@@ -79,11 +80,11 @@ public class Controller
         break;
 
       case 3:
-        bakers.listBakers();
+        bakers.listBakers(products);
         break;
 
       case 4:
-        // work
+        products.newProduct();
         break;
 
       default:

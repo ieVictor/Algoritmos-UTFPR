@@ -25,7 +25,7 @@ public class Customer
 
   public void modifyCustomer(int id)
   {
-    if(id - 1 > 5 || id - 1 < 0)
+    if(id > customerCounter || id - 1 < 0)
     {
       System.out.println("Id not found!\n");
       return;
